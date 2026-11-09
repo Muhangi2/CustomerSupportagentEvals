@@ -29,15 +29,15 @@ users_data = {
     "user126": {
         "backpack": {
             "price": 45,
-            "date": "2026-10-2"
+            "date": "2026-12-2"
         },
         "water_bottle": {
             "price": 18,
-            "date": "2026-7-25"
+            "date": "2026-12-25"
         },
         "lunch_box": {
             "price": 14,
-            "date": "2026-10-10"
+            "date": "2026-12-10"
         }
     },
     "user127": {

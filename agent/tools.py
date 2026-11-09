@@ -9,6 +9,12 @@ from datetime import datetime
 
 load_dotenv()  # Load environment variables from .env file
 
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+)
+
+
 @tool
 def get_user_purchase_history(username: str) -> dict:
     """
@@ -129,8 +135,8 @@ def get_purchase_item(username: str, item_name: str) -> PurchaseItem:
     return purchase_item
 
 
-book=PurchaseItem(name="notebook", price=15.99, date="2023-10-01")
-pen=PurchaseItem(name="pen", price=2.99, date="2026-10-26")
+# book=PurchaseItem(name="notebook", price=15.99, date="2023-10-01")
+# pen=PurchaseItem(name="pen", price=2.99, date="2026-10-26")
 # print(calculate_right_refund.invoke({"username": "user123", "items":[book,pen]})) 
 print(calculate_right_refund.invoke({"username": "user123", "item_name": "pen"})) # Example usage
 print(calculate_right_refund.invoke({"username": "user129", "item_name": "folder"}))
