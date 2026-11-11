@@ -138,5 +138,6 @@ def get_purchase_item(username: str, item_name: str) -> PurchaseItem:
 # book=PurchaseItem(name="notebook", price=15.99, date="2023-10-01")
 # pen=PurchaseItem(name="pen", price=2.99, date="2026-10-26")
 # print(calculate_right_refund.invoke({"username": "user123", "items":[book,pen]})) 
-print(calculate_right_refund.invoke({"username": "user123", "item_name": "pen"})) # Example usage
-print(calculate_right_refund.invoke({"username": "user129", "item_name": "folder"}))
+if __name__ == "__main__":
+    print(calculate_right_refund.invoke({"username": "user123", "item_name": "pen"})) # Example usage
+    print(calculate_right_refund.invoke({"username": "user129", "item_name": "folder"}))
